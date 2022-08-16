@@ -1,0 +1,122 @@
+/* Filtering table demo */
+ngbd-table-filtering span.ngb-highlight {
+  background-color: yellow;
+}
+
+/* Complete table demo */
+ngbd-table-complete span.ngb-highlight {
+  background-color: yellow;
+}
+
+ngb-carousel .picsum-img-wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 55%; /* Keep ratio for 900x500 images */
+}
+
+  ngb-carousel .picsum-img-wrapper > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+.header-image {
+    background-position: center;
+}
+
+.header-image img {
+    height: 100%;
+    width: auto;
+}
+
+/* Tab CSS */
+.cas-tab-icon {
+  color: #cab164;
+}
+
+::ng-deep .mat-tab-label {
+  color: #fff;
+  background-color: #052f5c;
+  width: 16.66%;
+  text-transform: uppercase;
+  border-right: 2px solid rgba(0,0,0,.18);
+}
+
+::ng-deep .mat-tab-labels {
+  padding: 15px 0;
+  background-color: #052f5c;
+}
+
+::ng-deep .mat-tab-label-active {
+  border-color: rgba(0,0,0,.12);
+}
+
+::ng-deep .mat-tab-body-content {
+  padding: 5% 5%;
+}
+
+.mat-card {
+  padding: 0;
+}
+
+#main-tab {
+  width: 100% !important;
+  margin: auto;
+}
+
+.games-card {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #052f5c;
+  color: #fff;
+}
+
+
+/* Accordion CSS  */
+.accordion h4 {
+  color: #fff;
+}
+
+.accordion {
+  color: #fff;
+  background: #052f5c;
+  border-radius: 20px;
+  border: 0px;
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+  padding: 20px 30px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.accordionDrop {
+    padding: 25px 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #d9d9d9;
+}
+
+details[open] > summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+details[open] > .accordionDrop {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+::-webkit-details-marker {
+    display: none;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+    details summary > * {
+        display: inline;
+    }

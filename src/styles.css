@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
+body {
+    
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    height: 100%;
+}
+
+mat-sidenav-content {
+    background-color: #071a3a;
+}
+
+.sidenav-logo {
+  width: 35%;
+  margin-bottom: 30px;
+}
+
+.button-rounded {
+  border-radius: 24px !important;
+}
+
+.button-brown {
+  background-color: #cab164;
+}
+
+.page-body {
+    width: 90%;
+    margin: auto;
+}
+
+.page-body-full {
+    width: 100%;
+}
+
+    .page-body p, .page-body h2 {
+        color: #fff;
+    }
+
+    .nav-header {
+        padding: 40px 0;
+    }
+
+/** Slider **/
+
+.header-image {
+  min-height: 380px;
+}
+
+/** Footer **/
+.footer-content {
+  background-color: #000;
+  bottom: 0;
+}
+
+.footer-navs a {
+  color: #ccc !important;
+  font-size: 13px;
+}
+
+  .footer-navs a strong {
+    color: #cab164;
+  }
+
+.footer-logos {
+  position: inherit;
+  min-height: 45px;
+  margin: 0;
+  padding: 0;
+  min-width: 25px;
+}
+
+.footer-navs, .payment-logo {
+  padding-top: 20px;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  display: flex;
+  place-content: stretch center;
+  align-items: stretch;
+}

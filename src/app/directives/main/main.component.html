@@ -1,0 +1,89 @@
+<!--<mat-toolbar fxShow="true" fxHide.gt-md="true" id="mobile-menu-bar">
+  <mat-toolbar-row>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon class="menu-icon">menu</mat-icon>
+    </button>
+    <a routerLink="/fr"><img class="logo" src="assets/images/logo.png"  alt="Casino Clic"></a>
+    <span class="row-spacer"></span>
+    <button fxShow="true" fxHide.gt-xs="true" mat-raised-button class="button-green button-rounded big-button">Se connecter/S'inscrire</button>
+    <button fxHide.xs mat-raised-button class="button-dark button-rounded"  >Se connecter</button>
+    <button fxHide.xs mat-raised-button class="button-green button-rounded"  >S'inscrire</button>
+
+  </mat-toolbar-row>
+
+  <mat-menu #menu="matMenu" class="mobile-menu">
+    <button mat-menu-item [routerLink]="'/fr'" routerLinkActive="active">
+      <mat-icon>house</mat-icon>
+      <span>Accueil</span>
+    </button>
+    <button mat-menu-item [routerLink]="'/fr/promotions'" routerLinkActive="active">
+      <mat-icon>redeem</mat-icon>
+      <span>Promotions</span>
+    </button>
+    <button mat-menu-item [routerLink]="'/fr/vip'" routerLinkActive="active">
+      <mat-icon>star</mat-icon>
+      <span>VIP</span>
+    </button>
+    <button mat-menu-item [routerLink]="'/fr/jackpots'" routerLinkActive="active">
+      <mat-icon>attach_money</mat-icon>
+      <span>Jackpots</span>
+    </button>
+    <button mat-menu-item [routerLink]="'/fr/support'" routerLinkActive="active">
+      <mat-icon>support_agent</mat-icon>
+      <span>Support</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>-->
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" fxLayout fxLayoutAlign="center" fxShow="”true”" fxHide.lt-lg="”true”" id="desktop-side-menu" opened>
+    <div class="nav-header">
+      <span>
+        <a routerLink="/" routerLinkActive="active">
+          <img class="sidenav-logo" src="assets/images/logo.png" alt="" />
+        </a>
+      </span>
+      <div>
+        <button mat-raised-button class="button-rounded button-brown">Login</button>
+      </div>
+      <div>
+        <button mat-raised-button class="button-rounded">Signup</button>
+      </div>
+      <div class="uct-time">10: 00 CET</div>
+    </div>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" [routerLink]="'/'" routerLinkActive="active">
+      <mat-icon class="slider-icons">house</mat-icon><br />
+      <span>Accueil</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" [routerLink]="'/fr/promotions'" routerLinkActive="active">
+      <mat-icon class="slider-icons">redeem</mat-icon><br />
+      <span>Promotions</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" [routerLink]="'/fr/vip'" routerLinkActive="active">
+      <mat-icon class="slider-icons">star</mat-icon><br />
+      <span>VIP</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" [routerLink]="'/fr/jackpots'" routerLinkActive="active">
+      <mat-icon class="slider-icons">attach_money</mat-icon><br />
+      <span>Jackpots</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" [routerLink]="'/fr/support'" routerLinkActive="active">
+      <mat-icon class="slider-icons">support_agent</mat-icon><br />
+      <span>Support</span>
+    </button>
+    <mat-divider></mat-divider>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="main-content">
+    <div class="main-router-content">
+
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

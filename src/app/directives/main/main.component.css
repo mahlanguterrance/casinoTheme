@@ -1,0 +1,92 @@
+.button-rounded {
+  width: 100px;
+}
+
+.slider-icons {
+  color: #fff;
+  font-size: 27px;
+}
+
+.menu-button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+  .menu-button span {
+    color: #fff;
+  }
+
+.mat-icon {
+  width: 32px;
+  color: #cab164;
+}
+
+mat-sidenav {
+  background: #052f5c;
+  color: #fff;
+  justify-content: center;
+  width: 230px;
+  text-align: center;
+  height: 100%;
+}
+
+  mat-sidenav .button-rounded {
+    width: 200px;
+    height: 45px;
+    margin-bottom: 15px;
+  }
+
+mat-sidenav-container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+mat-sidenav-content {
+  overflow-x: hidden;
+}
+
+mat-toolbar {
+  background: #052f5c;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  min-height: 10%;
+}
+
+.menu-button {
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.menu-icon {
+  transform: scale(2);
+}
+
+mat-toolbar-row .button-rounded {
+  margin: 0 4px;
+  padding: 0px;
+}
+
+.mat-drawer-side {
+  border-right: 0px !important;
+}
+
+@media screen and (max-width: 1280px) {
+  mat-toolbar {
+    min-height: 7%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  mat-toolbar {
+    min-height: 6% !important;
+  }
+}
